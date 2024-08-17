@@ -11,7 +11,7 @@ root.title("โปรแกรมแปลงสกุลเงิน")
 #input
 money = IntVar()
 Label(text="จำนวนเงิน(THB)",padx=10,font=20).grid(row=0,sticky=W)
-et1=Entry(font=30,width=30)
+et1=Entry(font=30,width=30,textvariable=money)
 et1.grid(row=0,column=1)
 #
 choice = StringVar(value="โปรดเลือกสกุเงิน")
@@ -28,6 +28,8 @@ et2.grid(row=2,column=1)
 def calcuLate():
     amount = money.get()
     currency = choice.get()
+    print(amount)
+    print(currency)
     
     if currency == "EUR":
         et2.delete(0,END)
@@ -53,6 +55,7 @@ def calcuLate():
 def deleteText():
     et1.delete(0,END)
     et2.delete(0,END)
+    print("deleteCLS")
 
 Button(text="คำนวน",font=30,width=15,command=calcuLate).grid(row=3,column=1,sticky=W)
 Button(text="ล้าง",font=30,width=15,command=deleteText).grid(row=3,column=1,sticky=E)
