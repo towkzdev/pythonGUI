@@ -1,7 +1,7 @@
 from tkinter import *
 root = Tk()
 root.title("เครื่องคิดเลข")
-
+#test
 content = "" #เก็บสมการ
 txt_input = StringVar(value="0") #นำสมการมาใช้งาน
 
