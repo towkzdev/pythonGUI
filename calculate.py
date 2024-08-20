@@ -3,6 +3,8 @@ root = Tk()
 root.title("เครื่องคิดเลข")
 #test
 #test2
+#asd
+#test001
 content = "" #เก็บสมการ
 txt_input = StringVar(value="0") #นำสมการมาใช้งาน
 

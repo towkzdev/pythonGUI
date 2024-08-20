@@ -25,7 +25,7 @@ def showMessage():
     Label(root,text="Hello DevGr",font=20,fg="red",bg="black").pack()
 
 btn3 = Button(text="ShowMessage",command=showMessage).pack()
-
+#twersds
 #การสร้างหน้าจอหลายๆหน้า
 def openWindow():
     #หน้าจอที่ 2
